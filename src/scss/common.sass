@@ -1,0 +1,73 @@
+// main common
+
+.font
+  +secondary-font
+
+.wrp
+  max-width: 1360px
+  margin: 0 auto
+  padding: 0 30px
+  +rt
+    max-width: 740px
+    padding: 0 15px
+
+// titles
+
+.h1, .h2, .h3, .h4
+  display: block
+  font-weight: 100
+  line-height: 1.1
+  text-transform: uppercase
+.h1
+  font-size: 40px
+  +rw
+    font-size: 30px
+  +rm
+    font-size: 24px
+.h2
+  font-size: 30px
+  +rn
+    font-size: 24px
+.h3
+  font-size: 24px
+  +rn
+    font-size: 18px
+.h4
+  font-size: 18px
+  font-weight: 300
+  +rn
+    font-size: 16px
+
+// elements
+
+=shadow
+  box-shadow: 0 8px 10px 0 rgba($font-gray, 0.25)
+
+.btn
+  height: 45px
+  background: $main-col
+  color: #fff
+  border-radius: 50px
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 14px
+  text-transform: uppercase
+  font-weight: bold
+  width: 225px
+  padding: 0 10px
+  transition: box-shadow .3s
+  &:hover
+    +shadow
+    color: #fff
+
+// form
+
+.inp
+  height: 45px
+  background: #fff
+  border-radius: 5px
+  width: 225px
+  padding: 0 10px 0 30px
+  &.form-err
+    border: solid 1px $main-col

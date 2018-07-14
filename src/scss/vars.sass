@@ -1,0 +1,38 @@
+// responsive
+
+$wide: 1366
+$note: 1024
+$tablet: 768
+$mobile: 568
+$mobile-s: 413
+
+=r($width)
+  @media only screen and (max-width: $width+ "px")
+    @content
+=rmin($width)
+  @media only screen and (min-width: $width+ "px")
+    @content
+=rw
+  @media only screen and (max-width: $wide+ "px")
+    @content
+=rn
+  @media only screen and (max-width: $note+ "px")
+    @content
+=rt
+  @media only screen and (max-width: $tablet+ "px")
+    @content
+=rm
+  @media only screen and (max-width: $mobile+ "px")
+    @content
+=rms
+  @media only screen and (max-width: $mobile-s+ "px")
+    @content
+
+// colors
+
+$font-gray: #8A91A2
+$font-sky: #BBD5FC
+
+$main-col: #3D39A2
+$bg-gray: #626876
+$bg-blue: #01122A
