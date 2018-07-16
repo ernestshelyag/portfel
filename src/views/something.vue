@@ -19,7 +19,6 @@
 </script>
 
 <style lang="sass">
-    @import "@/sass/mixins.sass"
     .something
     
 </style>

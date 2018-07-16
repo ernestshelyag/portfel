@@ -117,29 +117,12 @@
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
     @import "@/scss/mixins.scss";
+    @import url("//unpkg.com/element-ui@2.4.4/lib/theme-chalk/index.css");
 
-    .el-table th, .el-table tr {
-        background-color: $bg-gray;
-    }
-    .el-table td, .el-table th.is-leaf {
-        border-bottom: none;
-    }
-    .coin {
-        color: #fff;
-        &.is-leaf {
-            color: $font-sky;
-        }
-    }
-    .custom-table-header {
-        color: $font-sky;
-    }
-    .custom-table-row {
-        color: $font-gray;
-        background-color: $bg-gray;
-    }
+
     .briefcase {
         &__container {
             background: $bg-gray;
@@ -150,41 +133,65 @@
             padding: 40px;
         }
     }
-    .header {
-        padding: 16px 33px 16px;
-        border-bottom: solid 2px #8A91A2;
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
+    /deep/ {
 
-        &__input-block {
-            width: 248px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border: solid 2px $font-gray;
-            border-radius: 2px;
-            padding: 0 8px 0 15px;
-            margin-right: 24px;
+        .el-table th, .el-table tr {
+            background-color: $bg-gray;
         }
-        &__checkbox {
+        .el-table td, .el-table th.is-leaf {
+            border-bottom: none;
+        }
+        .coin {
             color: #fff;
-        }
-        &__value-block {
-            flex-grow: 1;
-            text-align: right;
-            i {
-                padding: 0 5px;
+            &.is-leaf {
+                color: $font-sky;
             }
         }
-        &__text {
-            color: $font-gray;
-            padding-right: 5px;
-        }
-        &__num {
+        .custom-table-header {
             color: $font-sky;
         }
+        .custom-table-row {
+            color: $font-gray;
+            background-color: $bg-gray;
+        }
+
+        .header {
+            padding: 16px 33px 16px;
+            border-bottom: solid 2px #8A91A2;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+
+            &__input-block {
+                width: 248px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: solid 2px $font-gray;
+                border-radius: 2px;
+                padding: 0 8px 0 15px;
+                margin-right: 24px;
+            }
+            &__checkbox {
+                color: #fff;
+            }
+            &__value-block {
+                flex-grow: 1;
+                text-align: right;
+                i {
+                    padding: 0 5px;
+                }
+            }
+            &__text {
+                color: $font-gray;
+                padding-right: 5px;
+            }
+            &__num {
+                color: $font-sky;
+            }
+        }
     }
-    @import url("//unpkg.com/element-ui@2.4.4/lib/theme-chalk/index.css");
+
+
     
 </style>
